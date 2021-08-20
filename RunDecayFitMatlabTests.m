@@ -1,7 +1,7 @@
 import matlab.unittest.TestRunner
 import matlab.unittest.Verbosity
 import matlab.unittest.plugins.CodeCoveragePlugin
-import matlab.unittest.plugins.codecoverage.CoberaturaFormat
+import matlab.unittest.plugins.codecoverage.CoberturaFormat
 
 % Add source folder to MATLAB search path
 addpath('src')
