@@ -14,8 +14,8 @@ runner = TestRunner.withTextOutput('OutputDetail',Verbosity.Detailed);
 
 % Create CodeCoverage plugin
 sourceFolder = 'src';
-reportFile = 'coberatura.xml';
-reportFormat = CoberaturaFormat(reportFile);
+reportFile = 'cobertura.xml';
+reportFormat = CoberturaFormat(reportFile);
 p = CodeCoveragePlugin.forFolder(sourceFolder,'IncludingSubFolders',true,'Producing',reportFormat);
 runner.addPlugin(p);
 
