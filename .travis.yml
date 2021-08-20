@@ -1,0 +1,7 @@
+language: matlab
+matlab:
+  - latest # Default MATLAB release on Travis
+  - R2020b
+  - R2020a
+script: matlab -batch 'RunDecayFitMatlabTests'
+after_success: bash <(curl -s https://codecov.io/bash)
