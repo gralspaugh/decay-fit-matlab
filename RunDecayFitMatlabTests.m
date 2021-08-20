@@ -7,7 +7,7 @@ import matlab.unittest.plugins.codecoverage.CoberturaFormat
 addpath('src')
 
 % Create a test suite
-suite = testsuite(append(pwd,'test'),'IncludeSubFolders',true);
+suite = testsuite(append(pwd,filesep,'test'),'IncludeSubFolders',true);
 
 % Create a test runner that displays progress
 runner = TestRunner.withTextOutput('OutputDetail',Verbosity.Detailed);
