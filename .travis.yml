@@ -1,4 +1,6 @@
 language: matlab
+notifications:
+  email: false 
 matlab:
   - latest # Default MATLAB release on Travis
   - R2020b
